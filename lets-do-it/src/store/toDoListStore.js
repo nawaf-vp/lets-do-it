@@ -1,4 +1,5 @@
-import Vue from "vue";
+export default Vue;
+import vue from 'vue';
 import Vuex from "vuex";
 Vue.use(Vuex);
 
