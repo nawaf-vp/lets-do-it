@@ -1,5 +1,5 @@
 export default Vue;
-import vue from 'vue';
+import { createApp } from 'vue';
 import Vuex from "vuex";
 Vue.use(Vuex);
 
@@ -7,7 +7,7 @@ function updateLocalStorage(items) {
   localStorage.setItem("items", JSON.stringify(items));
 }
 
-export const todoStore = new Vuex.Store({
+export const todoStore = new Vuex.Store({ 
   state: {
     items: JSON.parse(localStorage.getItem("items")) || [],
   },
